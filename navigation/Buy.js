@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 export default function BuyStack() {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Buy" component={BuyScreen} />
+        <Stack.Screen options={{headerTitleAlign: "center"}} name="Buy" component={BuyScreen} />
       </Stack.Navigator>
     );
 }

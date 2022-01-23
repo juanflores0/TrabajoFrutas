@@ -18,22 +18,22 @@ export default function App() {
 
           if (route.name === 'Principal') {
             iconName = focused
-              ? 'align-left'
-              : 'box';
+              ? 'check'
+              : 'calculator';
           } else if (route.name === 'Buy') {
             iconName = focused
               ? 'ios-list-box'
-              : 'ios-list';
+              : 'calculator';
           }
-
+         
           // You can return any component that you like here!
           return <Ionicons name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
       })}>
-        <Tab.Screen name="Principal" component={PrincipalStack} />
-        <Tab.Screen name="Buy" component={BuyStack} />
+        <Tab.Screen name="Principal" component={PrincipalStack} options={{headerShown: false}} />
+        <Tab.Screen name="Buy" component={BuyStack} options={{headerShown: false}} />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 export default function PrincipalStack() {
     return (
       <Stack.Navigator>
-        <Stack.Screen name="Principal" component={PrincipalScreen} />
+        <Stack.Screen options={{headerTitleAlign: "center"}} name="Principal" component={PrincipalScreen} />
       </Stack.Navigator>
     );
 }
